@@ -12,13 +12,13 @@ namespace PetCareTests.HomeWork
     {
         public void Take2ParametersTest(string firstOne, string secondOne)
         {
-            var firstOneParametr = firstOne.Substring(0, 1);
-            int firstOneParametr1 = int.Parse(firstOneParametr);
+            var firstOneParametr = firstOne.Substring(1, 4);
+            double  firstOneParametr1 = double.Parse(firstOneParametr);
             
-            var secondOneParametr = secondOne.Substring(0, 1);
-            int secondOneParametr1 = int.Parse(secondOneParametr);
+            var secondOneParametr = secondOne.Substring(1, 4);
+            double secondOneParametr1 = double.Parse(secondOneParametr);
 
-            int twoPricesTotal = (firstOneParametr1 + secondOneParametr1);
+            double twoPricesTotal = (firstOneParametr1 + secondOneParametr1);
 
         }
 

@@ -9,23 +9,19 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary3.Pages
 {
-    class RequestSummaryPage
+   public class RequestSummaryPage
     {
 
         private IWebDriver _driver;
-        private ChromeDriver driver;
+      
 
         public RequestSummaryPage(IWebDriver driver)
         {
             _driver = driver;
         }
 
-        public RequestSummaryPage(ChromeDriver driver)
-        {
-            this.driver = driver;
-        }
-
-        private  IWebElement ContactPageHeaderH1 => _driver.FindElement(By.XPath($"//h1"));
+     
+        private  IWebElement ContactPageHeaderH1 => _driver.FindElement(By.XPath("//h1"));
         private  IWebElement SubmintCareButton => _driver.FindElement(By.LinkText("care request"));
         
 
@@ -33,10 +29,10 @@ namespace ClassLibrary3.Pages
         
 
 
-        public void  ContactPageHeader(string headerContact)
+        public string  ContactPageHeader()
         {
-            var contacHeader = ContactPageHeaderH1.Text;
-            contacHeader.ShouldContainWithoutWhitespace(headerContact);
+           return ContactPageHeaderH1.Text;
+           
 
 
         }

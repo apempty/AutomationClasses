@@ -59,7 +59,6 @@
   <ItemGroup>
     <Compile Include="HomeWork\HomeWork.cs" />
     <Compile Include="HomeWork\Take2Parameters.cs" />
-    <Compile Include="IWebDriver.cs" />
     <Compile Include="Pages\CareRequestPage.cs" />
     <Compile Include="Pages\RequestSummaryPage.cs" />
     <Compile Include="Pages\NavigationMenuPage.cs" />

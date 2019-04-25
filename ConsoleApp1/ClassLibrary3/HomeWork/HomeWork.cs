@@ -26,7 +26,7 @@ namespace PetCareTests.HomeWork
                 var take2Parameters = new Take2Parameters();
 
                 take2Parameters.Take2ParametersTest(firstOne, secondOne);
-
+                
 
             }
         }

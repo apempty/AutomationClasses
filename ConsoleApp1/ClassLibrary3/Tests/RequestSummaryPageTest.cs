@@ -2,6 +2,7 @@
 using ClassLibrary3.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
+using Shouldly;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,12 +12,12 @@ using System.Threading.Tasks;
 namespace PetCareTests
 {
     [TestFixture]
-    class RequestSummaryPageTest
+    public class RequestSummaryPageTest
     {
         [Test]
         public void RequestSummaryPage()
         {
-            var headerContact = "Contact Me";
+            
 
             using (var driver = new ChromeDriver())
             {
@@ -31,8 +32,8 @@ namespace PetCareTests
 
                 var requestSummaryPage = new RequestSummaryPage(driver);
 
-                requestSummaryPage.ContactPageHeader(headerContact);
-
+                requestSummaryPage.ContactPageHeader().ShouldContain("Contact Me");
+                
 
                 requestSummaryPage.SubmitCareReuestForm();
 

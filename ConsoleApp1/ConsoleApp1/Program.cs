@@ -250,14 +250,14 @@ namespace ConsoleApp1
 
             //string phone1 = String.Format("{0:(###) ###-####}", testString);
 
-        }
-        
+                   }
 
-        
 
-        }
 
-        }
+
+    }
+
+}
     
 
     
